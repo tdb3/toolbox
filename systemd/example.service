@@ -1,0 +1,11 @@
+[Unit]
+Description=Example systemd service
+After=network.target
+
+[Service]
+Type=simple
+User=<USER SERVICE WILL RUN AS, IF NOT ROOT>
+ExecStart=/path/to/binary
+
+[Install]
+WantedBy=multi-user.target
