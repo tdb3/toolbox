@@ -1,0 +1,13 @@
+[Unit]
+Description=Service that forwards local service ports to a remote server
+After=network.target
+
+[Service]
+User=portforwarder
+RestartSec=15
+ExecStart=/usr/bin/ssh -o ServerAliveInterval=60 -o ExitOnForwardFailure=yes -nNT -R <PORT ON REMOTE>:127.0.0.1:<PORT ON LOCAL> portforwarder@<REMOTE_SERVER>
+Restart=always
+KillMode=mixed
+
+[Install]
+WantedBy=multi-user.target
