@@ -1,6 +1,3 @@
-Note:  Overall security posture of the local and remote servers needs to be considered before implementing.  
-
-
 ### User and key creation
 Create a new user on the machine hosting the service (which performs the persistent forwarding), become the user, and generate an SSH key pair.
 
