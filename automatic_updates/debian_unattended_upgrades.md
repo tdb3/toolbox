@@ -65,3 +65,11 @@ Edit 20auto-upgrades (values are in number of days):
 # Configure email sending
 See server_email_config.md
 
+# Testing
+Dry run
+
+    unattended-upgrade -v -d --dry-run
+    
+Execute
+
+    unattended-upgrade -v -d
