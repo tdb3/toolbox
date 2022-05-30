@@ -1,5 +1,5 @@
 # Overview
-Usefull when machine needs apt package updates (or new packages), but has no direct internet connectivity
+Useful when machine needs apt package updates (or new packages), but has no direct internet connectivity
 
 # Establish a socks proxy with SSH
 
