@@ -3,7 +3,7 @@ Useful when machine needs apt package updates (or new packages), but has no dire
 
 # Establish a socks proxy with SSH
 
-    ssh -D9001 user@host
+    ssh -D9001 user@proxyhost
 
 # Create Configuration
 
