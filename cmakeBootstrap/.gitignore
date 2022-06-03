@@ -1,0 +1,4 @@
+standalone/build/*
+shared_library/build/*
+static_library/build/*
+app_using_library/build/*
