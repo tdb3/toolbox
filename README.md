@@ -1,2 +1,2 @@
-# linux utils
+# Toolbox
 Various utilities/tools/scripts/snippets
