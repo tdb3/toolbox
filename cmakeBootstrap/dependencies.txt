@@ -1,0 +1,2 @@
+Packages needed (debian-based environments):
+git build-essential cmake
