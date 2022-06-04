@@ -9,7 +9,7 @@ Enable HTTP Strict Transport Security to prevent downgrade to HTTP.  Force HTTPS
 ### Add Header directive in the virtual host configuration
 
     <VirtualHost ...
-        Header always set Strict-Transport-Security "max-age=31546000;includeSubDomains"
+        Header always set Strict-Transport-Security "max-age=31536000;includeSubDomains"
     </VirtualHost>
     
 ### Restart apache
