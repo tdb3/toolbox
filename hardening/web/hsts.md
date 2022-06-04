@@ -1,5 +1,5 @@
 # Enable HSTS
-Enable HTTP Strict Transport Security to prevent downgrade to HTTP.  Force HTTPS.  (Debian).
+Enable HTTP Strict Transport Security to prevent downgrade to HTTP.
 
 ## In Apache
 ### Enable the headers module
