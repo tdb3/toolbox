@@ -1,5 +1,5 @@
 # Configure Referrer-Policy header
-Enable Referrer-Policy header to contorl how much information the browser includes with navigations away.
+Enable Referrer-Policy header to control how much information the browser includes with navigations away.
 
 ## In Apache
 ### Enable the headers module
