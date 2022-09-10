@@ -19,7 +19,7 @@ Uncomment the "updates" and "proposed-updates" origin patterns
 
 Add an email address for email notifiction of update activity
 
-    Unattended-Upgrade::Main "user@example.com";
+    Unattended-Upgrade::Mail "user@example.com";
 
 Allow automatically removing unused kernel-related packages
 
