@@ -5,7 +5,7 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
-colorscheme delek
+colorscheme desert
 
 set number
 set relativenumber
