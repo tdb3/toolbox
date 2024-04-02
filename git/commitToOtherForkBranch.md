@@ -24,7 +24,4 @@ git commit -m 'Added seednode prioritization message to help output'
 git push origin
 ```
 
-Here's an example:
-https://github.com/tdb3/bitcoin/commit/c83d32e86cf40ceec1a0cf53b435e0fd8a3dabfe
-
-The link above can then be provided to the author in a PR comment, so they can cherry-pick the commit at their discretion.
+The commit on your fork can then be provided to the author in a PR comment, so they can cherry-pick the commit at their discretion.
