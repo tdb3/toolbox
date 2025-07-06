@@ -30,3 +30,41 @@ Modify the DEVICESCAN line in /etc/smartd.conf to include `-M test` at the end o
     systemctl restart smartmontools
 
 Remove when successful email notification is received, and restart smartmontools again.
+
+# For eMMC
+Can check with the `mmc` util, or with the kernel's sysfs interface.
+(from https://www.toomanyatoms.com/computer/eMMC_health.html)
+
+Debian:
+```
+apt install mmc-utils
+```
+
+RHEL/fedora:
+```
+dnf install mmc-utils
+```
+
+Check for `mmcblk0`:
+```
+mmc extcsd read /dev/mmcblk0
+...
+eMMC Life Time Estimation A [EXT_CSD_DEVICE_LIFE_TIME_EST_TYP_A]: 0x01
+eMMC Life Time Estimation B [EXT_CSD_DEVICE_LIFE_TIME_EST_TYP_B]: 0x01
+```
+
+A is for SLC and B is for MLC. If eMMC is TLC, see B.
+
+The value begins at 0x01 and increases by 1 for every 10% of its lifetime used, and will be 0x0b after 100%. There’s also:
+
+```
+eMMC Pre EOL information [EXT_CSD_PRE_EOL_INFO]: 0x01
+```
+
+The EOL information is an overall status for reserved blocks, given as follows:
+
+- 0x00 = Not defined
+- 0x01 = Normal: consumed less than 80% of the reserved blocks
+- 0x02 = Warning: consumed 80% of the reserved blocks
+- 0x03 = Urgent: consumed 90% of the reserved blocks
+
